@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Add a products</h2>
+    <h2>Add a product</h2>
     <form @submit.prevent="submitForm">
       <div>
         <label for="title">Title</label>
@@ -32,9 +32,9 @@ export default {
 
     function submitForm() {
       addProduct({
-        title: enteredTitle,
-        description: enteredDescription,
-        price: enteredPrice,
+        title: enteredTitle.value,
+        description: enteredDescription.value,
+        price: enteredPrice.value,
       });
     }
 
